@@ -6,3 +6,15 @@ dotnet: 2.1.502
 script:
   - dotnet restore
   - dotnet build
+before_deploy:
+    - eval "$(ssh-agent -s)"
+    - mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking
+      no" >> ~/.ssh/config
+    - chmod 600 deploy_rsa
+deploy:
+    provider: script
+    skip_cleanup: true
+    script: ls && rsync -r --delete-after -e "ssh -i deploy_rsa -p $server_port" $TRAVIS_BUILD_DIR/bin/Release/netcoreapp2.1/publish/
+        $server_user@$server_ip:/home/marchenkors/www/testapp/publish
+    on:
+        branch: master
