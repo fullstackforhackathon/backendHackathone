@@ -14,7 +14,7 @@ namespace backendHackathone.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "hello", "from", "travis", "3" };
+            return new string[] { "hello", "from", "travis", "3", "last try" };
         }
 
         // GET api/values/5
