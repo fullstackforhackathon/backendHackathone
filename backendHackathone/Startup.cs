@@ -35,6 +35,21 @@ namespace backendHackathone
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors(options => options
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials()
+            );
+
+            app.UseCors(
+                builder =>
+                {
+                    builder.AllowAnyHeader();
+                    builder.AllowAnyMethod();
+                    builder.AllowAnyOrigin();
+                });
+
             app.UseMvc();
         }
     }
