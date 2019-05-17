@@ -1,6 +1,6 @@
 language: csharp
 dist: trusty
-sudo: required  
+sudo: required
 mono: none
 dotnet: 2.1.502
 script:
@@ -18,3 +18,6 @@ deploy:
         $server_user@$server_ip:/home/marchenkors/www/testapp/publish
     on:
         branch: master
+before_install:
+- openssl aes-256-cbc -K $encrypted_3656ade6b6b0_key -iv $encrypted_3656ade6b6b0_iv
+  -in deploy_rsa.enc -out deploy_rsa -d
