@@ -6,6 +6,7 @@ dotnet: 2.1.502
 script:
   - dotnet restore
   - dotnet build
+  - dotnet publish -c Release
 before_deploy:
     - eval "$(ssh-agent -s)"
     - mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking
@@ -14,7 +15,7 @@ before_deploy:
 deploy:
     provider: script
     skip_cleanup: true
-    script: ls && rsync -r --delete-after -e "ssh -i deploy_rsa -p $server_port" $TRAVIS_BUILD_DIR/bin/Release/netcoreapp2.1/publish/
+    script: ls && rsync -r --delete-after -e "ssh -i deploy_rsa -p $server_port" $TRAVIS_BUILD_DIR/backendHackathone/bin/Release/netcoreapp2.1/publish/
         $server_user@$server_ip:/home/marchenkors/www/testapp/publish
     on:
         branch: master
