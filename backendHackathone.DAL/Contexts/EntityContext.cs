@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using backendHackathone.Core.Entities;
+﻿using backendHackathone.Core.Entities;
+using backendHackathone.PresentLayer.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace backendHackathone.Core.Contexts
+namespace backendHackathone.DAL.Contexts
 {
     public class EntityContext : DbContext
     {
@@ -12,6 +10,11 @@ namespace backendHackathone.Core.Contexts
         public DbSet<Field> Fields { get; set; }
         public DbSet<FieldValue> FieldValues { get; set; }
         public DbSet<PowerLine> PowerLinesData { get; set; }
+
+        public DbSet<AgeRange> AgeRanges { get; set; }
+        public DbSet<Configuration> Configurations { get; set; }
+        public DbSet<FieldsMappingRules> FieldsMappingRules { get; set; }
+        public DbSet<SubmissionScope> SubmissionScopes { get; set; }
 
         public EntityContext(DbContextOptions<EntityContext> options)
             : base(options) { }
