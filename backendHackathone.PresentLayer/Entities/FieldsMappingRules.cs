@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using backendHackathone.Core.Entities;
 
 namespace backendHackathone.PresentLayer.Entities
 {
     public class FieldsMappingRules
     {
         public int ConfigurationId { get; set; }
-        public int OriginField { get; set; }
-        public int SourceField { get; set; }
         public bool IsVisible { get; set; }
+
+        public Field OriginField { get; set; }
+        public Field SourceField { get; set; }
     }
 }

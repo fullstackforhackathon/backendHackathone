@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace backendHackathone.PresentLayer.Entities
+﻿namespace backendHackathone.PresentLayer.Entities
 {
     public class AgeRange
     {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace backendHackathone.PresentLayer.Entities
+﻿namespace backendHackathone.PresentLayer.Entities
 {
     public class Configuration
     {
