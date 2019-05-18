@@ -6,7 +6,7 @@ namespace backendHackathone.PresentLayer.Entities
 {
     public class AgeRange
     {
-        public int ConfigureId { get; set; }
+        public int ConfigurationId { get; set; }
         public int Id { get; set; }
         public int StartAge { get; set; }
         public int EndAge { get; set; }

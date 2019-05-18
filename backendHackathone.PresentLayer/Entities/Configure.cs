@@ -2,7 +2,7 @@
 
 namespace backendHackathone.PresentLayer.Entities
 {
-    public class Configure
+    public class Configuration
     {
         public int Id { get; set; }
         public string Name { get; set; }
