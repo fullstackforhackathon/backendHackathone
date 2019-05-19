@@ -13,7 +13,7 @@ namespace backendHackathone.DAL.Contexts
 
         public DbSet<AgeRange> AgeRanges { get; set; }
         public DbSet<Configuration> Configurations { get; set; }
-        public DbSet<FieldsMappingRules> FieldsMappingRules { get; set; }
+        public DbSet<FieldsMappingRule> FieldsMappingRules { get; set; }
         public DbSet<SubmissionScope> SubmissionScopes { get; set; }
 
         public EntityContext(DbContextOptions<EntityContext> options)

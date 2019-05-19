@@ -3,7 +3,7 @@ using backendHackathone.PresentLayer.Models;
 
 namespace backendHackathone.PresentLayer.Models
 {
-    public class FieldsMappingRulesModel
+    public class FieldsMappingRuleModel
     {
         public int Id { get; set; }
         public int ConfigurationId { get; set; }
