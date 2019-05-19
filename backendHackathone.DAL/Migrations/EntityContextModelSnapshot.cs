@@ -94,7 +94,7 @@ namespace backendHackathone.DAL.Migrations
                     b.ToTable("Fields");
                 });
 
-            modelBuilder.Entity("backendHackathone.DAL.Entities.FieldsMappingRules", b =>
+            modelBuilder.Entity("backendHackathone.DAL.Entities.FieldsMappingRule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -205,7 +205,7 @@ namespace backendHackathone.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("backendHackathone.DAL.Entities.FieldsMappingRules", b =>
+            modelBuilder.Entity("backendHackathone.DAL.Entities.FieldsMappingRule", b =>
                 {
                     b.HasOne("backendHackathone.DAL.Entities.Field", "OriginField")
                         .WithMany()

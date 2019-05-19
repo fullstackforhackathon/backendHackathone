@@ -17,6 +17,7 @@
     <ProjectReference Include="..\backendHackathone.Core\backendHackathone.Core.csproj" />
     <ProjectReference Include="..\backendHackathone.DAL\backendHackathone.DAL.csproj" />
     <ProjectReference Include="..\backendHackathone.PresentLayer\backendHackathone.PresentLayer.csproj" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
   </ItemGroup>
 
 </Project>

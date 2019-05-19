@@ -129,7 +129,7 @@ namespace backendHackathone.DAL.Migrations
                     b.ToTable("Configurations");
                 });
 
-            modelBuilder.Entity("backendHackathone.PresentLayer.Entities.FieldsMappingRules", b =>
+            modelBuilder.Entity("backendHackathone.PresentLayer.Entities.FieldsMappingRule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -179,7 +179,7 @@ namespace backendHackathone.DAL.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("backendHackathone.PresentLayer.Entities.FieldsMappingRules", b =>
+            modelBuilder.Entity("backendHackathone.PresentLayer.Entities.FieldsMappingRule", b =>
                 {
                     b.HasOne("backendHackathone.Core.Entities.Field", "OriginField")
                         .WithMany()
