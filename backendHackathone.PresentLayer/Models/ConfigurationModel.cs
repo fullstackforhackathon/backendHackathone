@@ -1,6 +1,6 @@
-﻿namespace backendHackathone.PresentLayer.Entities
+﻿namespace backendHackathone.PresentLayer.Models
 {
-    public class Configuration
+    public class ConfigurationModel
     {
         public int Id { get; set; }
         public string Name { get; set; }

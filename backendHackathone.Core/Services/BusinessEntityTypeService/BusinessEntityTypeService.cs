@@ -1,4 +1,4 @@
-﻿using backendHackathone.Core.Entities;
+﻿using backendHackathone.Core.Models;
 using backendHackathone.DAL.Repositories.BusinessEntityTypeRepository;
 
 namespace backendHackathone.Core.Services.BusinessEntityTypeService
@@ -11,15 +11,15 @@ namespace backendHackathone.Core.Services.BusinessEntityTypeService
             _repository = repository;
         }
 
-        public BusinessEntityType Create(BusinessEntityType businessEntityType)
+        public BusinessEntityTypeModel Create(BusinessEntityTypeModel businessEntityTypeModel)
         {
             var result = _repository.Create(new DAL.Entities.BusinessEntityType
             {
-                Id = businessEntityType.Id,
-                Name = businessEntityType.Name
+                Id = businessEntityTypeModel.Id,
+                Name = businessEntityTypeModel.Name
             });
 
-            return new BusinessEntityType { Id= result.Id, Name= result.Name } ;
+            return new BusinessEntityTypeModel { Id= result.Id, Name= result.Name } ;
         }
     }
 }

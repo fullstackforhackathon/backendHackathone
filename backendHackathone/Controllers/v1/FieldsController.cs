@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using backendHackathone.Core.Services.FieldsService;
-using backendHackathone.Core.Entities;
+using backendHackathone.Core.Models;
+using backendHackathone.DAL.Repositories.Fields;
 
 namespace backendHackathone.Controllers
 {
@@ -10,10 +12,12 @@ namespace backendHackathone.Controllers
     public class FieldsController : ControllerBase
     {
         private readonly IFieldsService _service;
+        private readonly IFieldRepository _repository;
 
-        public FieldsController(IFieldsService service)
+        public FieldsController(IFieldsService service, IFieldRepository repository)
         {
             _service = service;
+            _repository = repository;
         }
         // GET api/values
         [HttpGet]
@@ -24,14 +28,20 @@ namespace backendHackathone.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<IEnumerable<FieldModel>> Get([FromQuery] int businessEntityTypeId)
         {
-            return "value";
+            return _repository.Get(businessEntityTypeId)
+                .Select(f => new FieldModel
+                {
+                    Id = f.Id,
+                    Name = f.Name
+                })
+                .ToList();
         }
 
         // POST api/values
         [HttpPost]
-        public Field Post([FromQuery] int businessEntityTypeId, [FromBody] Field value)
+        public FieldModel Post([FromQuery] int businessEntityTypeId, [FromBody] FieldModel value)
         {
             return _service.Create(businessEntityTypeId, value);
         }

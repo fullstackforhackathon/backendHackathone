@@ -1,9 +1,9 @@
-﻿using backendHackathone.PresentLayer.Entities;
+﻿using backendHackathone.PresentLayer.Models;
 
 namespace backendHackathone.PresentLayer.Services.SubmissionScopeService
 {
     public interface ISubmissionScopeService
     {
-        SubmissionScope Create(SubmissionScope repository);
+        SubmissionScopeModel Create(SubmissionScopeModel repository);
     }
 }

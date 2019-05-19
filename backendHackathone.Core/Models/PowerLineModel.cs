@@ -1,6 +1,6 @@
-﻿namespace backendHackathone.Core.Entities
+﻿namespace backendHackathone.Core.Models
 {
-    public class PowerLine : IBusinessEntity
+    public class PowerLineModel : IBusinessEntityModel
     {
         public int Id { get; set; }
         public int Number { get; set; }

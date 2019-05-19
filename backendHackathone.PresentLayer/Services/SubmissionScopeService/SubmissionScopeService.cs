@@ -1,5 +1,5 @@
 ﻿using backendHackathone.DAL.Repositories.SubmissionScopeRepository;
-using backendHackathone.PresentLayer.Entities;
+using backendHackathone.PresentLayer.Models;
 
 namespace backendHackathone.PresentLayer.Services.SubmissionScopeService
 {
@@ -12,17 +12,17 @@ namespace backendHackathone.PresentLayer.Services.SubmissionScopeService
             _repository = repository;
         }
 
-        public SubmissionScope Create(SubmissionScope submissionScope)
+        public SubmissionScopeModel Create(SubmissionScopeModel submissionScopeModel)
         {
             var result = _repository.Create(new DAL.Entities.SubmissionScope
             {
-                CompanyName = submissionScope.CompanyName,
-                Date = submissionScope.Date,
-                FilialName = submissionScope.FilialName,
-                ReportId = submissionScope.ReportId
+                CompanyName = submissionScopeModel.CompanyName,
+                Date = submissionScopeModel.Date,
+                FilialName = submissionScopeModel.FilialName,
+                ReportId = submissionScopeModel.ReportId
             });
 
-            return new SubmissionScope
+            return new SubmissionScopeModel
             {
                 CompanyName = result.CompanyName,
                 Date = result.Date,

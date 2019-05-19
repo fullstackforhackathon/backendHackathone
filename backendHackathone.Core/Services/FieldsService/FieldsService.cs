@@ -1,4 +1,5 @@
-﻿using backendHackathone.Core.Entities;
+﻿using backendHackathone.Core.Models;
+using backendHackathone.DAL.Entities;
 using backendHackathone.DAL.Repositories.Fields;
 
 namespace backendHackathone.Core.Services.FieldsService
@@ -12,11 +13,11 @@ namespace backendHackathone.Core.Services.FieldsService
             _repository = repository;
         }
 
-        public Field Create(int businessEntityTypeId, Field field)
+        public FieldModel Create(int businessEntityTypeId, FieldModel fieldModel)
         {
-            var result = _repository.Create(businessEntityTypeId, new DAL.Entities.Field { Id = field.Id, Name = field.Name });
+            var result = _repository.Create(businessEntityTypeId, new Field { Id = fieldModel.Id, Name = fieldModel.Name });
 
-            return new Field { Id = result.Id, Name = result.Name };
+            return new FieldModel { Id = result.Id, Name = result.Name };
         }
     }
 }

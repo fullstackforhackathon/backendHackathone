@@ -1,4 +1,4 @@
-﻿using backendHackathone.PresentLayer.Entities;
+﻿using backendHackathone.PresentLayer.Models;
 using backendHackathone.PresentLayer.Services.SubmissionScopeService;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -34,7 +34,7 @@ namespace backendHackathone.Controllers.v1
 
         // POST api/values
         [HttpPost]
-        public SubmissionScope Post([FromBody] SubmissionScope value)
+        public SubmissionScopeModel Post([FromBody] SubmissionScopeModel value)
         {
             return _service.Create(value);
         }

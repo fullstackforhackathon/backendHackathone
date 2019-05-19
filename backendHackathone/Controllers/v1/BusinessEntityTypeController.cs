@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using backendHackathone.Core.Entities;
+using backendHackathone.Core.Services.FieldsService;
+using backendHackathone.Core.Models;
 using backendHackathone.Core.Services;
 
 namespace backendHackathone.Controllers
@@ -31,9 +32,9 @@ namespace backendHackathone.Controllers
 
         // POST api/values
         [HttpPost]
-        public BusinessEntityType Post([FromBody] BusinessEntityType businessEntityType)
+        public BusinessEntityTypeModel Post([FromBody] BusinessEntityTypeModel businessEntityTypeModel)
         {
-            return _service.Create(businessEntityType);
+            return _service.Create(businessEntityTypeModel);
         }
 
         // PUT api/values/5

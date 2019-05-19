@@ -1,6 +1,6 @@
-﻿namespace backendHackathone.PresentLayer.Entities
+﻿namespace backendHackathone.PresentLayer.Models
 {
-    public class AgeRange
+    public class AgeRangeModel
     {
         public int ConfigurationId { get; set; }
         public int Id { get; set; }

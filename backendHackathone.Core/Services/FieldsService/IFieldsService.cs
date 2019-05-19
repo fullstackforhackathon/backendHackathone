@@ -1,9 +1,9 @@
-﻿using backendHackathone.Core.Entities;
+﻿using backendHackathone.Core.Models;
 
 namespace backendHackathone.Core.Services.FieldsService
 {
     public interface IFieldsService
     {
-        Field Create(int businessEntityTypeId, Field field);
+        FieldModel Create(int businessEntityTypeId, FieldModel fieldModel);
     }
 }

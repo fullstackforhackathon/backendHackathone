@@ -1,9 +1,9 @@
-﻿using backendHackathone.Core.Entities;
+﻿using backendHackathone.Core.Models;
 
 namespace backendHackathone.Core.Services
 {
     public interface IBusinessEntityTypeService
     {
-        BusinessEntityType Create(BusinessEntityType businessEntityType);
+        BusinessEntityTypeModel Create(BusinessEntityTypeModel businessEntityTypeModel);
     }
 }

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace backendHackathone.PresentLayer.Entities
+namespace backendHackathone.PresentLayer.Models
 {
-    public class SubmissionScope
+    public class SubmissionScopeModel
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
