@@ -5,7 +5,7 @@ using backendHackathone.PresentLayer.Models;
 
 namespace backendHackathone.PresentLayer.Services.FieldsMappingRuleService
 {
-    public class FieldsMappingRuleService
+    public class FieldsMappingRuleService : IFieldsMappingRuleService
     {
         private readonly IFieldsMappingRulesRepository _repository;
         private readonly IFieldsService _fieldsService;
