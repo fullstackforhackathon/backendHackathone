@@ -19,15 +19,8 @@ namespace backendHackathone.Controllers
             _service = service;
             _repository = repository;
         }
-        // GET api/values
+      
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "hello", "from", "travis", "3", "last try2" };
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
         public ActionResult<IEnumerable<FieldModel>> Get([FromQuery] int businessEntityTypeId)
         {
             return _repository.Get(businessEntityTypeId)
