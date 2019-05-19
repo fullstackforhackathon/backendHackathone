@@ -11,7 +11,6 @@ namespace backendHackathone.Core
         {
             services.AddScoped<IFieldsService, FieldsService>();
             services.AddScoped<IBusinessEntityTypeService, BusinessEntityTypeService>();
-            services.AddScoped<ISubmissionScopeService, SubmissionScopeService>();
             return services;
         }
     }
