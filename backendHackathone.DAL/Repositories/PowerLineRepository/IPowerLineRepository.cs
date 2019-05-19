@@ -13,5 +13,6 @@ namespace backendHackathone.DAL.Repositories.PowerLineRepository
     public interface IPowerLineRepository
     {
         IQueryable<PowerLineWithCustomFields> GetAll(int submissionScopeId);
+        PowerLine Create(PowerLine powerLine);
     }
 }
