@@ -18,7 +18,18 @@ namespace backendHackathone.DAL.Repositories.PowerLineRepository
         public IQueryable<PowerLineWithCustomFields> GetAll(int submissionScopeId)
         {
             throw new NotImplementedException();
-            // var powerLines = _context.PowerLinesData.Where(x => x.)
+            var powerLines = _context.PowerLinesData
+                .Where(x => x.SubmissionScopeId == submissionScopeId);
+
+            var customFields = powerLines.Select(x => x.FieldValues);
+
+                //.Select(x => new PowerLineWithCustomFields
+                //{
+                //    PowerLine = x,
+                //    Fields = x.FieldValues
+                //    .Select(adFields => new { key = adFields.Field.Name, value = adFields.Value })
+                //    .ToDictionary(x => x.key);
+                //});
         }
     }
 }
