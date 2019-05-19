@@ -1,4 +1,6 @@
-﻿namespace backendHackathone.Core.Entities
+﻿using System.Collections.Generic;
+
+namespace backendHackathone.DAL.Entities
 {
     public class PowerLine : IBusinessEntity
     {
@@ -15,5 +17,7 @@
         public double LengthByChain { get; set; }
         public string LineMark { get; set; }
         public string TechnicalStatus { get; set; }
+
+        public IList<FieldValue> FieldValues { get; set; }
     }
 }

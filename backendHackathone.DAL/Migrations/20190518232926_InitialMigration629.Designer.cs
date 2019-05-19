@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using backendHackathone.DAL.Contexts;
 
 namespace backendHackathone.DAL.Migrations
 {
     [DbContext(typeof(EntityContext))]
-    partial class EntityContextModelSnapshot : ModelSnapshot
+    [Migration("20190518232926_InitialMigration629")]
+    partial class InitialMigration629
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -127,13 +129,9 @@ namespace backendHackathone.DAL.Migrations
 
                     b.Property<int>("FieldId");
 
-                    b.Property<int?>("PowerLineId");
-
                     b.HasKey("Id");
 
                     b.HasIndex("FieldId");
-
-                    b.HasIndex("PowerLineId");
 
                     b.ToTable("FieldValues");
                 });
@@ -222,10 +220,6 @@ namespace backendHackathone.DAL.Migrations
                         .WithMany()
                         .HasForeignKey("FieldId")
                         .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("backendHackathone.DAL.Entities.PowerLine")
-                        .WithMany("FieldValues")
-                        .HasForeignKey("PowerLineId");
                 });
 #pragma warning restore 612, 618
         }

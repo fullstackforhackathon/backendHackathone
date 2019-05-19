@@ -1,4 +1,4 @@
-﻿namespace backendHackathone.Core.Entities
+﻿namespace backendHackathone.DAL.Entities
 {
     internal interface IBusinessEntity
     {

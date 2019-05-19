@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace backendHackathone.Core.Entities
+﻿namespace backendHackathone.Core.Entities
 {
     public class BusinessEntityType
     {

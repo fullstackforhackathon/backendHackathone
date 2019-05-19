@@ -1,6 +1,4 @@
-﻿using backendHackathone.DAL.Entities;
-
-namespace backendHackathone.PresentLayer.Entities
+﻿namespace backendHackathone.DAL.Entities
 {
     public class FieldsMappingRules
     {

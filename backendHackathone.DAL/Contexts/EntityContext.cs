@@ -1,5 +1,4 @@
-﻿using backendHackathone.Core.Entities;
-using backendHackathone.PresentLayer.Entities;
+﻿using backendHackathone.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace backendHackathone.DAL.Contexts
@@ -9,6 +8,7 @@ namespace backendHackathone.DAL.Contexts
         public DbSet<BusinessEntityType> BusinessEntityTypes { get; set; }
         public DbSet<Field> Fields { get; set; }
         public DbSet<FieldValue> FieldValues { get; set; }
+        public DbSet<BusinessEntityTypeField> BusinessEntityTypeFields { get; set; }
         public DbSet<PowerLine> PowerLinesData { get; set; }
 
         public DbSet<AgeRange> AgeRanges { get; set; }

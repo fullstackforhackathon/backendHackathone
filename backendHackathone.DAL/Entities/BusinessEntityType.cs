@@ -1,6 +1,6 @@
-﻿namespace backendHackathone.Core.Entities
+﻿namespace backendHackathone.DAL.Entities
 {
-    public class Field
+    public class BusinessEntityType
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -11,9 +11,4 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\backendHackathone.Core\backendHackathone.Core.csproj" />
-    <ProjectReference Include="..\backendHackathone.PresentLayer\backendHackathone.PresentLayer.csproj" />
-  </ItemGroup>
-
 </Project>
