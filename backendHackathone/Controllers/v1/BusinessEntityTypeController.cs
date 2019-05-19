@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using backendHackathone.Core.Services.FieldsService;
 using backendHackathone.Core.Entities;
 using backendHackathone.Core.Services;
 

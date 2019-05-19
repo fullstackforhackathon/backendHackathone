@@ -1,6 +1,7 @@
 ﻿using backendHackathone.Core;
 using backendHackathone.DAL;
 using backendHackathone.DAL.Contexts;
+using backendHackathone.PresentLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -26,6 +27,7 @@ namespace backendHackathone
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddDalRepositories();
             services.AddCoreServices();
+            services.AddPresentLayerService();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

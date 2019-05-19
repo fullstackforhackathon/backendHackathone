@@ -2,9 +2,6 @@
 using backendHackathone.Core.Services.BusinessEntityTypeService;
 using backendHackathone.Core.Services.FieldsService;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace backendHackathone.Core
 {
@@ -14,7 +11,7 @@ namespace backendHackathone.Core
         {
             services.AddScoped<IFieldsService, FieldsService>();
             services.AddScoped<IBusinessEntityTypeService, BusinessEntityTypeService>();
-
+            services.AddScoped<ISubmissionScopeService, SubmissionScopeService>();
             return services;
         }
     }
