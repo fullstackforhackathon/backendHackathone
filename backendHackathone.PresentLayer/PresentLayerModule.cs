@@ -1,4 +1,4 @@
-﻿using backendHackathone.PresentLayer.Services.AgeRangeServices;
+﻿using backendHackathone.PresentLayer.Services.AgeRangeService;
 using backendHackathone.PresentLayer.Services.SubmissionScopeService;
 using Microsoft.Extensions.DependencyInjection;
 
