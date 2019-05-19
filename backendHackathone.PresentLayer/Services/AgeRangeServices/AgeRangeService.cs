@@ -3,7 +3,7 @@ using System.Linq;
 using backendHackathone.DAL.Repositories.AgeRangeRepository;
 using backendHackathone.PresentLayer.Models;
 
-namespace backendHackathone.PresentLayer.Services.AgeRange
+namespace backendHackathone.PresentLayer.Services.AgeRangeServices
 {
     public class AgeRangeService : IAgeRangeService
     {

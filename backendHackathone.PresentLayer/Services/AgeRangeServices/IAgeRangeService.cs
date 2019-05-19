@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace backendHackathone.PresentLayer.Services.AgeRange
+namespace backendHackathone.PresentLayer.Services.AgeRangeServices
 {
     public interface IAgeRangeService
     {
