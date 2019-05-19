@@ -18,6 +18,9 @@ namespace backendHackathone.DAL.Entities
         public string LineMark { get; set; }
         public string TechnicalStatus { get; set; }
 
+        public SubmissionScope SubmissionScope { get; set; }
+        public int SubmissionScopeId { get; set; }
+
         public IList<FieldValue> FieldValues { get; set; }
     }
 }
