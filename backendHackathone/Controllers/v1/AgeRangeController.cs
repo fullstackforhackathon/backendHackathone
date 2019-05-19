@@ -1,10 +1,7 @@
 ﻿using backendHackathone.PresentLayer.Models;
-using backendHackathone.PresentLayer.Services.AgeRangeServices;
+using backendHackathone.PresentLayer.Services.AgeRangeService;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace backendHackathone.Controllers.v1
 {
