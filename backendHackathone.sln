@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backendHackathone", "backen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backendHackathone.Core", "backendHackathone.Core\backendHackathone.Core.csproj", "{1EA7B5A2-1D5B-4AA7-B658-A7F3C55CC941}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backendHackathone.PresentLayer", "backendHackathone.PresentLayer\backendHackathone.PresentLayer.csproj", "{A0955AFE-D971-415D-AFE5-075579364906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backendHackathone.PresentLayer", "backendHackathone.PresentLayer\backendHackathone.PresentLayer.csproj", "{A0955AFE-D971-415D-AFE5-075579364906}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backendHackathone.DAL", "backendHackathone.DAL\backendHackathone.DAL.csproj", "{CE923330-BA84-4DEF-BB3E-66813B2F7BFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backendHackathone.DAL", "backendHackathone.DAL\backendHackathone.DAL.csproj", "{CE923330-BA84-4DEF-BB3E-66813B2F7BFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
