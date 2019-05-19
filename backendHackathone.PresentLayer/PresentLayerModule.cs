@@ -1,4 +1,5 @@
-﻿using backendHackathone.PresentLayer.Services.AgeRangeService;
+﻿using backendHackathone.PresentLayer.Excel;
+using backendHackathone.PresentLayer.Services.AgeRangeService;
 using backendHackathone.PresentLayer.Services.ConfigurationService;
 using backendHackathone.PresentLayer.Services.FieldsMappingRuleService;
 using backendHackathone.PresentLayer.Services.SubmissionScopeService;
@@ -14,6 +15,8 @@ namespace backendHackathone.PresentLayer
             services.AddScoped<IAgeRangeService, AgeRangeService>();
             services.AddScoped<IConfigurationService, ConfigurationService>();
             services.AddScoped<IFieldsMappingRuleService, FieldsMappingRuleService>();
+
+            services.AddScoped<IExcelParser, ExcelParser>();
 
             return services;
         }
