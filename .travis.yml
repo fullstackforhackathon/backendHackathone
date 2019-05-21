@@ -6,8 +6,8 @@ dotnet: 2.1.502
 script:
   - dotnet restore
   - dotnet build
-  - dotnet publish -c Release
   - dotnet test -c Release --no-build backendHackathone.Tests/backendHackathone.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+  - dotnet publish -c Release
 after_script:
         - bash <(curl -s https://codecov.io/bash)
 before_deploy:
