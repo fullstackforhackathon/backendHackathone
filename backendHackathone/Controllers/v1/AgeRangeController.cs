@@ -16,11 +16,11 @@ namespace backendHackathone.Controllers.v1
             _service = service;
         }
 
-        [HttpGet]
-        public IEnumerable<AgeRangeModel> Get([FromQuery]int configurationId)
-        {
-            return _service.Get(configurationId);
-        }
+        //[HttpGet]
+        //public IEnumerable<AgeRangeModel> Get([FromQuery]int configurationId)
+        //{
+        //    return _service.Get(configurationId);
+        //}
 
         [HttpGet]
         public IEnumerable<string> Get()
