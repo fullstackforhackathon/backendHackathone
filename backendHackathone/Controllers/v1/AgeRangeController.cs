@@ -22,6 +22,12 @@ namespace backendHackathone.Controllers.v1
             return _service.Get(configurationId);
         }
 
+        [HttpGet]
+        public IEnumerable<string> Get()
+        {
+            return new [] { "test", "travis"};
+        }
+
         [HttpPut]
         public AgeRangeModel Put([FromBody]AgeRangeModel ageRangeModel)
         {
