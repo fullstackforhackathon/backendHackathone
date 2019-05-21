@@ -24,4 +24,3 @@ before_install:
   -in deploy_rsa.enc -out deploy_rsa -d
 after_deploy:
   - ssh -i deploy_rsa -p $server_port $server_user@$server_ip sudo systemctl restart kestrel-test.service
-  
