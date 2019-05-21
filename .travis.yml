@@ -7,6 +7,9 @@ script:
   - dotnet restore
   - dotnet build
   - dotnet publish -c Release
+  - dotnet test -c Release --no-build backendHackathone.Tests/backendHackathone.Tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+after_script:
+        - bash <(curl -s https://codecov.io/bash)
 before_deploy:
     - eval "$(ssh-agent -s)"
     - mkdir -p ~/.ssh  &&  echo "Host *" > ~/.ssh/config && echo " StrictHostKeyChecking

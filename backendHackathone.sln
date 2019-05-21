@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backendHackathone.PresentLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "backendHackathone.DAL", "backendHackathone.DAL\backendHackathone.DAL.csproj", "{CE923330-BA84-4DEF-BB3E-66813B2F7BFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backendHackathone.Tests", "backendHackathone.Tests\backendHackathone.Tests.csproj", "{D586FE08-6C53-4F79-B644-1EE6094B6CEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CE923330-BA84-4DEF-BB3E-66813B2F7BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE923330-BA84-4DEF-BB3E-66813B2F7BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE923330-BA84-4DEF-BB3E-66813B2F7BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D586FE08-6C53-4F79-B644-1EE6094B6CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D586FE08-6C53-4F79-B644-1EE6094B6CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D586FE08-6C53-4F79-B644-1EE6094B6CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D586FE08-6C53-4F79-B644-1EE6094B6CEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
